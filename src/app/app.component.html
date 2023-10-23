@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 align="center">Welcome to Angular!!</h1>
+
+<table border="1" width="90%" align="center">
+  <tr><td align="center"><h1>Header</h1></td></tr>
+  <tr><td>
+        <table border="1" width="100%">
+      <tr>
+        <td>
+            <ul>
+                <li>
+                  <a routerLink="product/add" routerLinkActive="active">
+                    Insert product
+                  </a>
+                </li>
+                <li>
+                  <a routerLink="product" routerLinkActive="active">
+                    Show products
+                  </a>
+                </li> 
+              </ul>
+              
+        </td>
+        <td width="70%">
+          
+            <router-outlet></router-outlet>
+        </td>
+        <td> </td>
+      </tr>
+    </table>
+  </td></tr>
+  <tr><td align="center"><h3>Footer</h3></td></tr>
+</table>
+</body>
+</html>
